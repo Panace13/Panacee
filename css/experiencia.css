@@ -1,0 +1,118 @@
+.experiencia {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.experiencia .subt {
+  color: #e0e0e0;
+}
+
+.exp-text {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #525252;
+}
+
+.exp-text strong {
+  color: #141414;
+}
+
+.projeto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  position: relative;
+  gap: 10px 20px;
+}
+
+.projeto::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  top: 20px;
+  left: -4px;
+}
+
+.ano {
+  position: absolute;
+  top: 21px;
+  left: -100px;
+  text-align: right;
+  width: 80px;
+  color: #525252;
+  font-size: 1rem;
+}
+
+.proje-tit {
+  font-size: 1.2rem;
+  line-height: 1.1;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.proje-text {
+  font-size: 0.875rem;
+  color: #525252;
+  line-height: 1.4;
+}
+
+.habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+.habilidades li {
+  font-size: 0.875rem;
+  line-height: 1.4rem;
+  border-radius: 4px;
+  background: #fff;
+  padding: 5px 10px;
+}
+
+@media (max-width:800px){
+  .experiencia{
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .experiencia .subt{
+    color: #141414;
+  }
+
+  .exp-text{
+    font-size: 1.25rem;
+  }
+
+  .ano{
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+
+  .ano::before{
+    content: "Ano: ";
+  }
+}
+
+@media (max-width:400px){
+
+.projeto{
+  grid-template-columns: 1fr;
+}
+
+}
