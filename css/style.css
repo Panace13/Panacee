@@ -4,3 +4,46 @@
 @import "./experiencia.css";
 @import "./formacao.css";
 @import "./footer.css";
+
+@media (max-width: 1000px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 40px;
+  }
+  .footer-contato {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 470px) {
+  .intro {
+    padding: 10px 20px;
+    gap: 10px;
+  }
+  .intro h1 {
+    margin-bottom: 10px;
+    font-size: 3rem;
+  }
+  .container::after {
+    display: none;
+  }
+  .footer-container {
+    max-width: 1200px;
+    padding: 30px 10px 10px 10px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+  }
+  .footer-texto {
+    font-size: 1rem;
+  }
+  .footer-contato li {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+}
